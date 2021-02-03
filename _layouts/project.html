@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
+{% for node in page.jekyll-theme-WuK.page.prepend %}
+{{ node }}
+{% endfor %}
 <div class="container content">
   {{ content }}
 </div>
-{% for node in page.jekyll-theme-WuK.page.apppend %}
-{{ node }}
-{% endfor %}
 {% if page.jekyll-theme-WuK.page.katex.enable %}
 {{ page.jekyll-theme-WuK.page.katex.append }}
 {% endif %}
